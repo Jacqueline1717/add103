@@ -1,0 +1,70 @@
+/* 1. Gradient background for header using linear-gradient */
+header {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 2. Navigation with flexbox */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* 3. Smooth transition effect */
+}
+
+nav a:hover {
+  color: #ffdf00;
+}
+
+/* 4. Responsive layout with flexbox for articles */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 10px;
+}
+
+.features article {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 5. Box shadow effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+.features article:hover {
+  transform: scale(1.05); /* 6. Scale transform on hover */
+}
+
+.intro {
+  background-color: #fafafa;
+  padding: 20px;
+  margin: 20px;
+  border-left: 6px solid #8f94fb;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .features article {
+    width: 100%;
+  }
+}
